@@ -20,5 +20,8 @@ public class Player : MonoBehaviour
 
         rb.velocity = new Vector2(horizontal * 5, rb.velocity.y);
 
+        if (Input.GetKey(KeyCode.Space))
+            rb.velocity = new Vector2(rb.velocity.x, 8);
+
     }
 }
